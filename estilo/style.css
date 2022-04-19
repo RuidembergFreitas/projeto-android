@@ -94,7 +94,7 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
+    
 
 }
 
@@ -132,14 +132,14 @@ main a {
     text-decoration: none;
     font-weight: bold;
     color: var(--cor5);
-    background-color: var(--cor2);
+    
     padding: 2px 6px;
 }
 
 main a:hover{
     text-decoration: underline;
     color: var(--cor4);
-
+    background-color: var(--cor2);
 }
 
 main img{
@@ -214,26 +214,88 @@ footer a:hover{
 #txt-contato{
     width: 100%;
     height: 100%;
-}
-#txt-contato #conta-data{
-    min-width: 175px;
-    width: 35%;
-    float: none;
-    padding: 2%;
-    background-color: var(--cor4);
-    color: #fff;
-    top: 5%;
-    margin-left: 1.5em;
-    height: 400px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-#txt-contato #conta-data h5{
-    margin-top: 6%;
-    margin-bottom: 4%;
-    vertical-align: middle;
-}
-#txt-contato #conta-data h5 img{
+.box{
     width: 50px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
     
+}
+.box:hover{
+    width: 200px;
+    background: #D13ABB;
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px #cf16b4;
+}
+.box:nth-child(2):hover{
+    background: #4BC959;
+    box-shadow: 0 0 50px #0bc020;
+}
+.box:nth-child(3):hover{
+    background: #FF0000;
+    box-shadow: 0 0 50px #ac1b1b;
+}
+.box:nth-child(4):hover{
+    background: #161B22;
+    box-shadow: 0 0 50px #161B22;
+}
+
+#navbar p{
+    transform: translate(30px);
+    font-size: 1.5em;
+}
+
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .5s ease;
+    
+}
+
+.instagram{
+    background-color: #D13ABB;
+    font-size: 30px;
+}
+.whatsapp{
+    background-color: #4BC959;
+    font-size: 30px;
+}
+.youtube{
+    background-color: #FF0000;
+    font-size: 30px;
+}
+.github{
+    background-color: #161B22;
+    font-size: 30px;
+}
+.box:hover .icon{
+    background: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
+    
+}
+.box p a{
+
+    color: #fff;
+    text-decoration: none;
 }
